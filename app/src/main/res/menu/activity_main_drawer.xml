@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+                This xml file handles the menu items of the slide-out navbar
+    -->
+    <group
+        android:id="@+id/drawer_top"
+        android:checkableBehavior="single">
+        <item android:title="Anmelden"
+            android:id="@+id/nav_login" />
+        <item android:title="Registrieren"
+            android:id="@+id/nav_register" />
+        <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Mein Konto" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="Nachrichten" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favoriten" />
+    </group>
+
+
+    <group android:id="@+id/drawer_mid">
+        <item android:title="Herborgen">
+            <menu>
+                <item
+                    android:id="@+id/nav_myproducts"
+                    android:icon="@drawable/ic_format_paint_black_24dp"
+                    android:title="Meine Gegenstände"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/nav_lentproducts"
+                    android:icon="@drawable/ic_file_upload_black_24dp"
+                    android:title="Gegenstand Verborgen"
+                    android:checkable="true"/>
+            </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/drawer_mid_2">
+        <item android:title="Geborgt">
+            <menu>
+                <item
+                    android:id="@+id/nav_geborgt"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:title="Geborgte Gegenstände"
+                    android:checkable="true"
+                    />
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/drawer_bottom"
+        android:checkableBehavior="none">
+        <item android:title="Einstellungen">
+            <menu>
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Einstellungen"
+                    android:checkable="true"/>
+            </menu>
+        </item>
+    </group>
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+</menu>

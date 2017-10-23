@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_anmelden"
+        android:title="@string/anmelden"
+        android:orderInCategory="100"
+        android:onClick="doLogin"/>
+    <item
+        android:id="@+id/action_registrieren"
+        android:title="@string/registrieren"
+        android:orderInCategory="102"
+        android:onClick="doRegister"/>
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:orderInCategory="103"
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="104"
+        android:title="@string/einstellungen"
+        android:onClick="doSettingsMenu" />
+
+</menu>
